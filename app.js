@@ -31,6 +31,13 @@ app.get("/contact",function(re,ress){
 contactContent:contactContent,
 });
 });
+app.get("/compose",function(rq,rs){
+  rs.render("compose");
+});
+app.post("/compose",function(req,res){
+  console.log(req.body.words);
+});
+
 
 
 
